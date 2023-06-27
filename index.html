@@ -150,12 +150,11 @@
         </div>
 		<!-- Пример задачи 6 -->
         <div class="task">
-            <h3>Задача 6 (математическая логика, формулы алгебры логики)</h3>
+            <h3>Задача 6 (векторы)</h3>
             <p>Центром правильного треугольника ABC явялется точка O. Докажите, что где бы не находилась точка M на плоскости, то справедливо равенство \( \overrightarrow{MO}=\frac{1}{3}(\overrightarrow{MA}+\overrightarrow{MB}+\overrightarrow{MC}). \)</p>
             <button onclick="toggleAnswer(6)">Ответ</button>
             <div id="answer-6" class="answer">
-                <p>Решение: введём обозначения для высказываний. С – победит Старый Бегун, О – победит Облачный Пегас, Б – победит Быстрый Хвост. Перепишем высказывания ребят на языке алгебры логики. \( Дима: \bar{С} \cdot Б, Никита: С \cdot \bar{О}, Петя: Дима: \bar{Б}\). </p>
-				<p> Запишем формулу с учётом условия задачи о верности их предположений. $$ (\bar{C} \cdot Б) \cdot (С \cdot \bar{О}) \cdot \bar{\bar{Б}} + (\bar{C} \cdot Б) \cdot (\bar{С \cdot \bar{О}}) \cdot \bar{Б} + (\bar{\bar{О} \cdot Б}) \cdot (С \cdot \bar{О}) \cdot \bar{Б} = (С + \bar{Б}) \cdot С \cdot \bar{О} \cdot \bar{Б} = С \cdot \bar{О} \cdot \bar{Б}.$$  Поэтапно упрощённое высказывание истинно только при С=1,О=0,Б=0. Поэтому победил Старый Бегун.</p>
+                <p>Решение: преобразуем равенство. \( (\overrightarrow{MA}-\overrightarrow{MO})+(\overrightarrow{MB}-\overrightarrow{MO})+(\overrightarrow{MC}-\overrightarrow{MO})=\overrightarrow{0} \) или \( \overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}=\overrightarrow{0}. \) Три вектора в сумме могут дать 0, если они образуют треугольник.</p>
 			</div>
         </div>	
     </div>
